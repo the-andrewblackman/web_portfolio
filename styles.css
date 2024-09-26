@@ -1,0 +1,366 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* Dark shades of primary color */
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* Primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* Lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* Grey for headings and text */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-secondary: hsla(182, 63%, 54%);
+  
+  /* Font Families */
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  /* Transition */
+  --transition: all 0.3s linear;
+
+  /* Spacing */
+  --spacing: 0.25rem;
+
+  /* Border radius */
+  --radius: 0.5rem;
+
+  /* Shadows */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Widths */
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Headings */
+h1, h2 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.about-me {
+  margin: 1rem;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+  background: var(--clr-grey-10);
+  border-radius: 1rem;
+  border: 2px solid var(--clr-grey-9);
+}
+
+/* imported css  */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.linkedIn {
+  width: 10%;
+  margin: 1rem;
+}
+.color {
+  background-color: var(--clr-primary-white);
+  color: var(--clr-primary-black);
+}
+.head {
+  font-size: 1.3rem;
+}
+.portfolio-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+}
+
+.section-footer {
+  background: var(--clr-white);
+  padding: 0.25rem;
+}
+#linkedIn {
+  width: 2rem;
+  margin: 1rem;
+}
+.color {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  stroke: pink;
+  z-index: 1;
+}
+
+/*  global classes */
+
+.links-container {
+  margin: 1rem;
+  display: grid;
+  justify-items: center;
+}
+.links-container a {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--clr-black);
+  padding: 0.5rem 0 0 0.5rem;
+  width: 79vw;
+  height: 7rem;
+  border: 3px solid var(--clr-grey-8);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 1rem 0 1rem;
+  height: 7.5rem;
+  border-radius: 1rem;
+}
+
+.btn {
+  color: var(--clr-black);
+  letter-spacing: var(--spacingTwo);
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+.btn-white {
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
+
+/* section */
+.section {
+  padding-bottom: 2rem;
+}
+
+/* hero */
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./hero-bcg.jpeg) center/cover no-repeat;
+}
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.container h1,
+.container h2 {
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+.container p {
+  color: var(--clr-white);
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+/* sections and title */
+
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.title .second-word {
+  color: var(--clr-secondary);
+}
+#about,
+#services,
+#portfolio {
+  height: 80vh;
+}
+#portfolio,
+#about {
+  background: var(--clr-white);
+
+  border-right: 20px solid var(--clr-grey-1);
+  border-bottom: 20px solid var(--clr-grey-1);
+  border-left: 20px solid var(--clr-grey-1);
+}
+#portfolio {
+  height: auto;
+}
+#about {
+  /* height: 19rem; */
+  border: 20px solid var(--clr-grey-1);
+}
+.rectangle-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container a {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  margin: 0.5rem;
+}
+footer p {
+  color: var(--clr-black);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
+p {
+  background-color: white;
+}
+
+@media screen and (min-width: 449px) {
+  .about-me {
+    font-size: 0.83rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 505px) {
+  .about-me {
+    font-size: 1.1rem;
+  }
+  #about{
+    height:18rem;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color: var(--clr-white);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+  .links a:hover {
+    color: var(--clr-white);
+  }
+  #about{
+    height:16rem;
+  }
+  .about-me {
+    font-size: 1.3rem;
+  }
+  .container p {
+    max-width: 40rem;
+  }
+  .links-container a {
+    font-size: 1.35rem;
+    height: 10rem;
+  }
+  .card {
+    height: 11rem;
+  }
+
+  .head {
+    font-size: 3rem;
+  }
+}

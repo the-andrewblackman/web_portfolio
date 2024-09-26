@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Blackman Portfolio</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="home">      
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>Andrew Ronald Blackman</h1>
+          <h2>Front End Developer</h2>
+          <div class="flex-container">
+            <div class="rectangle-button-container">
+              <a href="#about" class="scroll-link btn btn-white">
+                ABOUT ME
+              </a>
+              <a href="#portfolio" class="scroll-link btn btn-white">
+                PORTFOLIO
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about<span class="second-word">me</span></h2>
+        <p class="about-me">Software Developer proficient in Java, Spring, Git, Docker, HTML, CSS, JavaScript, Angular, and AWS; I create effective solutions by drawing on my background in both technology and the arts. I am passionate about providing a unique, simple, and engaging web experience on all platforms; thinking about the user every step of the way.
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section id="portfolio" class="section">
+      <div class="title portfolio-links">
+        <h2>my<span class="second-word">portfolio</span></h2>
+          <div class="card"> 
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick="document.location='https://chromecowboy.github.io/LifeHacksDatabase/'"> 
+                <span class="head">LIFE HACKS</span><br>
+                Built a search filter using Javascript<br>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick=""> 
+                <span class="head">CHUCK NORRIS JOKES</span><br>
+                Built a joke machine using an API and Javascript<br>
+              </a>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick="document.location='https://the-andrewblackman.github.io/colorFlipper/'">
+                <span class="head">COLOR FLIPPER</span><br>
+                Built a swatch site using HTML, CSS, JavaScript<br>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick="document.location='https://the-andrewblackman.github.io/burgerMenus/'">
+                <span class="head">FOOD MENU</span><br>
+                Built a menu using Javascript, CSS, and HTML<br>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick="document.location='https://chromecowboy.github.io/webForm/'" >
+                <span class="head"></span><br>
+                <br>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="links-container">
+              <a class="btn" style="cursor:pointer" onclick="" >
+                <span class="head">LOCAL STORAGE</span><br>
+                Rate movies, local storage remembers choice.<br>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- footer -->
+    <footer class="section-footer">
+      <div class="flex" id="linked" style="cursor:pointer" >
+        <img src="svg/linkedin.svg" onclick="document.location='https://www.linkedin.com/in/andrew-ronald-blackman-79a79a12b/';" alt="linkedIn" id="linkedIn" class="flex linkedIn color">
+      </div> 
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
