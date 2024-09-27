@@ -109,7 +109,13 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-
+.headline{
+  text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
 .about-me {
   margin: 1rem;
   padding: 0.6rem;
@@ -145,7 +151,6 @@ h2 {
   flex-direction: column;
   font-size: 1.75rem;
 }
-
 .section-footer {
   background: var(--clr-white);
   padding: 0.25rem;
@@ -188,7 +193,6 @@ h2 {
   height: 7.5rem;
   border-radius: 1rem;
 }
-
 .btn {
   color: var(--clr-black);
   letter-spacing: var(--spacingTwo);
@@ -256,7 +260,6 @@ header {
 #portfolio,
 #about {
   background: var(--clr-white);
-
   border-right: 20px solid var(--clr-grey-1);
   border-bottom: 20px solid var(--clr-grey-1);
   border-left: 20px solid var(--clr-grey-1);
