@@ -297,6 +297,10 @@ p {
   .about-me {
     font-size: 0.83rem;
     height: 12rem;
+    .color{
+      width: 5vw;
+      margin: 1em;
+    }
   }
 }
 
@@ -306,6 +310,9 @@ p {
   }
   #about{
     height:18rem;
+  }
+  .color{
+    width:3vw;
   }
 }
 
@@ -362,7 +369,9 @@ p {
   .card {
     height: 11rem;
   }
-
+  .color{
+    width: 1vw;
+  }
   .head {
     font-size: 3rem;
   }
