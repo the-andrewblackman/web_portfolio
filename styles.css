@@ -302,7 +302,6 @@ p {
     }
   }
 }
-
 @media screen and (min-width: 505px) {
   .about-me {
     font-size: 1.1rem;
@@ -314,7 +313,6 @@ p {
     width:3vw;
   }
 }
-
 @media screen and (min-width: 975px) {
   h1 {
     font-size: 4rem;
