@@ -292,7 +292,6 @@ footer p {
 p {
   background-color: white;
 }
-
 @media screen and (min-width: 449px) {
   .about-me {
     font-size: 0.83rem;
