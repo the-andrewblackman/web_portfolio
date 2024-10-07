@@ -1,0 +1,3 @@
+[submodule "lifehacksDatabase"]
+	path = lifehacksDatabase
+	url = https://github.com/the-andrewblackman/lifehacksDatabase.git
