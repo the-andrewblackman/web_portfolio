@@ -4,3 +4,6 @@
 [submodule "colorFlipper"]
 	path = colorFlipper
 	url = https://github.com/the-andrewblackman/colorFlipper.git
+[submodule "burgerMenus"]
+	path = burgerMenus
+	url = https://github.com/the-andrewblackman/burgerMenus.git
