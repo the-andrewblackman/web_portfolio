@@ -13,3 +13,6 @@
 [submodule "pyramid_json"]
 	path = pyramid_json
 	url = https://github.com/the-andrewblackman/pyramid-descent-angular.git
+[submodule "pyramid-descent-angular"]
+	path = pyramid-descent-angular
+	url = https://github.com/the-andrewblackman/pyramid-descent-angular.git
