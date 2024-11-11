@@ -153,7 +153,15 @@ h2 {
 }
 .section-footer {
   background: var(--clr-white);
-  padding: 0.25rem;
+  padding: 1.3rem;
+  display: flex;       
+  gap: 1rem;   
+  justify-content: center;       
+  align-items: center;
+}
+.icon {
+  display: flex;
+  justify-content: center; 
 }
 #linkedIn {
   width: 2rem;
@@ -268,7 +276,6 @@ header {
   height: auto;
 }
 #about {
-  /* height: 19rem; */
   border: 20px solid var(--clr-grey-1);
 }
 .rectangle-button-container {
@@ -305,7 +312,11 @@ p {
     height: 22rem;
   }
   .flex {
-    height: 20px;
+    height: 26px;
+  }
+  .icon svg {
+    width: 100px;
+    height: 10px;
   }
 }
 @media screen and (min-width: 505px) {
@@ -315,8 +326,9 @@ p {
   #about{
     height:21rem;
   }
-  .color{
+  .icon svg {
     width:3vw;
+    height: 3vh;
   }
 }
 @media screen and (min-width: 975px) {
@@ -371,9 +383,6 @@ p {
   }
   .card {
     height: 11rem;
-  }
-  .color{
-    width: 1vw;
   }
   .head {
     font-size: 3rem;
